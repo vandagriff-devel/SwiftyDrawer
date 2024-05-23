@@ -11,6 +11,9 @@
 		AB5E50DA2BFD840200C35A99 /* SwiftyDrawer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB5E50CF2BFD840200C35A99 /* SwiftyDrawer.framework */; };
 		AB5E50DF2BFD840200C35A99 /* SwiftyDrawerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E50DE2BFD840200C35A99 /* SwiftyDrawerTests.swift */; };
 		AB5E50E02BFD840200C35A99 /* SwiftyDrawer.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5E50D22BFD840200C35A99 /* SwiftyDrawer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB5E50EA2BFD939C00C35A99 /* SwiftyDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E50E92BFD939C00C35A99 /* SwiftyDrawer.swift */; };
+		AB5E50EC2BFED03D00C35A99 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E50EB2BFED03D00C35A99 /* Test.swift */; };
+		AB5E50EF2BFED55000C35A99 /* DrawerSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5E50EE2BFED55000C35A99 /* DrawerSize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		AB5E50D32BFD840200C35A99 /* SwiftyDrawer.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftyDrawer.docc; sourceTree = "<group>"; };
 		AB5E50D92BFD840200C35A99 /* SwiftyDrawerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyDrawerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB5E50DE2BFD840200C35A99 /* SwiftyDrawerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyDrawerTests.swift; sourceTree = "<group>"; };
+		AB5E50E92BFD939C00C35A99 /* SwiftyDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyDrawer.swift; sourceTree = "<group>"; };
+		AB5E50EB2BFED03D00C35A99 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		AB5E50EE2BFED55000C35A99 /* DrawerSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerSize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +77,11 @@
 		AB5E50D12BFD840200C35A99 /* SwiftyDrawer */ = {
 			isa = PBXGroup;
 			children = (
+				AB5E50ED2BFED53F00C35A99 /* enums */,
 				AB5E50D22BFD840200C35A99 /* SwiftyDrawer.h */,
 				AB5E50D32BFD840200C35A99 /* SwiftyDrawer.docc */,
+				AB5E50E92BFD939C00C35A99 /* SwiftyDrawer.swift */,
+				AB5E50EB2BFED03D00C35A99 /* Test.swift */,
 			);
 			path = SwiftyDrawer;
 			sourceTree = "<group>";
@@ -83,6 +92,14 @@
 				AB5E50DE2BFD840200C35A99 /* SwiftyDrawerTests.swift */,
 			);
 			path = SwiftyDrawerTests;
+			sourceTree = "<group>";
+		};
+		AB5E50ED2BFED53F00C35A99 /* enums */ = {
+			isa = PBXGroup;
+			children = (
+				AB5E50EE2BFED55000C35A99 /* DrawerSize.swift */,
+			);
+			path = enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB5E50EA2BFD939C00C35A99 /* SwiftyDrawer.swift in Sources */,
 				AB5E50D42BFD840200C35A99 /* SwiftyDrawer.docc in Sources */,
+				AB5E50EC2BFED03D00C35A99 /* Test.swift in Sources */,
+				AB5E50EF2BFED55000C35A99 /* DrawerSize.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +427,7 @@
 		AB5E50E72BFD840200C35A99 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4N897ND495;
@@ -423,6 +444,7 @@
 		AB5E50E82BFD840200C35A99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4N897ND495;
